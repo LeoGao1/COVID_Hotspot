@@ -8,7 +8,7 @@ sys.path.insert(0, 'src/analysis')
 sys.path.insert(0, 'src/model')
 
 from etl import get_data
-
+from clean import data_cleaning
 
 
 def main(targets):
@@ -22,6 +22,7 @@ def main(targets):
     if 'data' in targets:
 
         data = get_data()
+        
 
     if 'analysis' in targets:
         pass
